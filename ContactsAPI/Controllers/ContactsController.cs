@@ -1,4 +1,4 @@
-﻿using ContactsApi.Models;
+using ContactsApi.Models;
 using ContactsApi.Repository;
 using Microsoft.AspNetCore.Mvc;
 
@@ -34,7 +34,7 @@ namespace ContactsApi.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create([FromBody] dynamic item)
+        public IActionResult Create([FromBody] Contacts item)
         {
             if (item == null)
             {
